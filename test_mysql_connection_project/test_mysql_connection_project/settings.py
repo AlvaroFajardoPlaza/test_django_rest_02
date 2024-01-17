@@ -39,8 +39,15 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "corsheaders",
+    "crispy_forms",
+    "crispy_bootstrap5",
     "app02.apps.App02Config",
+    "crm.apps.CrmConfig",
 ]
+
+# CRISPY-FORMS SET-UP
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
